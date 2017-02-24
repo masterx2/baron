@@ -85,6 +85,9 @@
                 'https://github.com/Diokuz/baron/blob/master/docs/logs/no-jquery-detected.md'
             ].join(', '), params)
         }
+
+        $ = params.$
+
         if (params.position == 'absolute' && params.impact == 'clipper') {
             log('error', [
                 'Simultaneous use of `absolute` position and `clipper` impact values detected.',
